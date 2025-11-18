@@ -1,0 +1,121 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+}
+
+body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background: linear-gradient(to right, #1AB188, #24323D);
+                
+}
+
+.title {
+          font-size: 28px;
+          color: #1AB188;
+          font-weight: 600;
+          letter-spacing: 0.3px;
+          position: relative;
+          text-align: center;
+}
+
+.form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          max-width: 450px;
+      
+          /* 🔥 Glass effect */
+          background: rgba(255, 255, 255, 0.1); /* transparent */
+          backdrop-filter: blur(10px);          /* blur behind */
+          -webkit-backdrop-filter: blur(10px);  /* Safari support */
+      
+          padding: 30px;
+          border-radius: 20px;
+          position: relative;
+      
+          /* Optional: border frost effect */
+          border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+
+.message, 
+.signin {
+          color: #FFF;
+          font-size: 14px;
+          text-align: center;
+}
+
+.signin a {
+          color: #1EC79A;
+          text-decoration: none;
+          transition: 0.3s;
+}
+
+.signin a:hover {
+          color: #1EC79A;
+}
+
+.form-group {
+          display: flex;
+          width: 100%;
+          gap: 6px;
+}
+
+.form label {
+          position: relative;
+}
+
+.form label input {
+          width: 100%;
+          padding: 10px 10px 20px 10px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+}
+
+.form label input + span {
+          position: absolute;
+          left: 10px;
+          top: 15px;
+          color: #24323D;
+          font-size: 0.9em;
+          cursor: text;
+          transition: 0.9em;
+}
+
+.form label input:placeholder-shown + span {
+          top: 10px;
+          font-size: 0.9em;
+}
+
+.form label input:focus + span,
+.form label input:valid + span {
+          top: 30px;
+          font-size: 0.7em;
+          font-weight: 600;
+}
+
+.form label input:valid + span {
+          color: #1AB188;
+}
+
+.submit {
+          border: none;
+          outline: none;
+          background: #1AB188;
+          padding: 10px;
+          border-radius: 10px;
+          color: #FFF;
+          font-size: 16px;
+          transform: 0.3s ease;
+          cursor: pointer;
+}
+.submit:hover {
+          background: #1EC79A;
+          transition: 0.3s;
+}

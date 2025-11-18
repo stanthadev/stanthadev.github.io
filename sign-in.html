@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <link rel="stylesheet" href="style.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <form action="" autocomplete="off" class="form">
+                    <p class="title">Sign In</p>
+                    <p class="message">Sign Up now! And get full access to our App</p>
+
+                    <div class="form-group">
+                              <label for="">
+                                        <input type="text" required>
+                                        <span>Firstname</span>
+                              </label>
+                              <label for="">
+                                        <input type="text" required>
+                                        <span>Lastname</span>
+                              </label>
+                    </div>
+                    <label for="">
+                              <input type="text" required>
+                              <span>Email</span>
+                    </label>
+                    <label for="">
+                              <input type="password" id="password" required>
+                              <span>Password</span>
+                              <span class="icon" id="togglePassword">
+                                        <i class="far fa-eye-slash"></i>
+                              </span>
+                    </label>
+                    <label for="">
+                              <input type="password" id="passwordConfirm" required>
+                              <span>Confirm  Password</span>
+                              <span class="icon" id="togglePasswordConfirm">
+                                        <i class="far fa-eye-slash"></i>
+                              </span>
+                    </label>
+                    <button type="button" class="submit" onclick="window.location.href='register.html'">Submit</button>
+                    <p class="signin">
+                              Open an account?
+                              <a href="register.html">SignIn</a>
+                    </p>
+          </form>
+
+          <script src="script.js"></script>
+</body>
+</html>
